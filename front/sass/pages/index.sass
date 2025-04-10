@@ -31,16 +31,12 @@ body
     background: url("../img/bg-512.jpg") no-repeat 50% 50%/cover
   &__header
     color: white
-    border: 1px dashed yellow
     position: absolute
     top: 0
     left: 0
     right: 0
     padding: 0 50px
-
-
   &__title
-    border: 1px dashed red
     text-align: center
     margin-top: 94px
     font-family: $font-suisse-bold
@@ -50,7 +46,6 @@ body
     -webkit-text-stroke-color: #65204A
     font-size: 94.71px
     font-weight: 700
-    // line-height: 65%
     letter-spacing: -2.841px
     span
       font-family: $font-suisse-bold
@@ -58,19 +53,25 @@ body
       text-shadow: 0px 3.946px 0px #0E3B79
       font-size: 94.71px
       font-weight: 700
-      // line-height: 65%
       letter-spacing: -2.841px
   &__list
     display: flex
     justify-content: space-between
+    margin-top: 50px
   &__list-item
-      font-family: $font-suisse-medium
-      color: $white
-      font-size: 24.241px
-      font-weight: 500
-      line-height: 65% 
-      letter-spacing: -0.727px
-
+    display: flex
+    align-items: center
+    gap: 12px
+    img
+      width: 45px
+      height: 45px
+  &__list-text
+    font-family: $font-suisse-medium
+    color: $white
+    font-size: 24.241px
+    font-weight: 500
+    line-height: 65% 
+    letter-spacing: -0.727px
   &__sam
     position: absolute
     bottom: -240px
