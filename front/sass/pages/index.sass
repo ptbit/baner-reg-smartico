@@ -1,18 +1,23 @@
 $pink: #FF267E
 $grey: #E3E3E3
+$white: #FFF
 
 $font-suisse-bold: SuisseIntl-Bold, sans-serif //700
+$font-suisse-medium: SuisseIntl-Medium, sans-serif //500
 
+body
+  background-color: grey
 .wrapper
   -webkit-tap-highlight-color: transparent
   overscroll-behavior: none
   width: 50% // development
+  margin: 0 auto
   // width: 100% // prod
   height: 100%
   img
     max-width: 100%
     height: auto
-.login
+.reg
   position: relative
   height: calc(var(--vh, 1vh) * 100)
   width: 100%
@@ -24,40 +29,53 @@ $font-suisse-bold: SuisseIntl-Bold, sans-serif //700
     background: url("../img/bg-640.jpg") no-repeat 50% 50%/cover
   @media screen and (max-width: 1260px)
     background: url("../img/bg-512.jpg") no-repeat 50% 50%/cover
-  &__title
-    position: relative
-    margin: 92px auto 0
-    display: flex
-    flex-direction: column
-    align-items: center
-    font-size: 112px
-    font-family: $font-suisse-bold
-    color: $pink
-    text-shadow: 0px 4.654px 0px #65204A
-    line-height: 65%
-    letter-spacing: -3.351px
-    -webkit-text-stroke-width: 1.16px
-    -webkit-text-stroke-color: #65204A
-
-    span
-      font-family: $font-suisse-bold
-      margin-top: 38px
-      color: $grey
-      letter-spacing: -3.351px
-      text-shadow: 0px 5.947px 0px #0E3B79
-
-  &__salute
+  &__header
+    color: white
+    border: 1px dashed yellow
     position: absolute
-    bottom: -5px
+    top: 0
     left: 0
     right: 0
+    padding: 0 50px
+
+
+  &__title
+    border: 1px dashed red
+    text-align: center
+    margin-top: 94px
+    font-family: $font-suisse-bold
+    color: $pink
+    text-shadow: 0px 3.946px 0px #65204A
+    -webkit-text-stroke-width: 0.99px
+    -webkit-text-stroke-color: #65204A
+    font-size: 94.71px
+    font-weight: 700
+    // line-height: 65%
+    letter-spacing: -2.841px
+    span
+      font-family: $font-suisse-bold
+      color: $grey
+      text-shadow: 0px 3.946px 0px #0E3B79
+      font-size: 94.71px
+      font-weight: 700
+      // line-height: 65%
+      letter-spacing: -2.841px
+  &__list
+    display: flex
+    justify-content: space-between
+  &__list-item
+      font-family: $font-suisse-medium
+      color: $white
+      font-size: 24.241px
+      font-weight: 500
+      line-height: 65% 
+      letter-spacing: -0.727px
+
   &__sam
     position: absolute
-    bottom: -377px
-    margin-left: -255px
-    margin-right: -178px
-  &__full-sam, &__only-salute
-    display: none
+    bottom: -240px
+    margin-left: -120px
+    margin-right: -170px
 
 
 
