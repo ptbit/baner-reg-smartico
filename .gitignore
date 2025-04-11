@@ -26,3 +26,4 @@ TEST*.xml
 .DS_Store
 
 *.fig
+files/
